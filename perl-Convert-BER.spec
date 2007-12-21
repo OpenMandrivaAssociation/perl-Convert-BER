@@ -14,6 +14,7 @@ Source: 	%{realname}-%{realversion}.tar.bz2
 BuildArch:	noarch
 URL: 		http://www.cpan.org/modules/by-module/Convert/
 BuildRequires:	perl-devel
+BuildRoot: 	%{_tmppath}/%{name}-root/
 Requires: 	perl
 
 %description
