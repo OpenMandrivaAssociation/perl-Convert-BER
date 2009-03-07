@@ -1,6 +1,6 @@
 %define version	1.31.01
 %define realversion	1.3101
-%define release	%mkrel 6
+%define release	%mkrel 7
 %define name 	perl-Convert-BER
 %define realname	Convert-BER
 
