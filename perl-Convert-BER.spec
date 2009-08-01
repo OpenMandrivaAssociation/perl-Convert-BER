@@ -1,21 +1,18 @@
-%define version	1.31.01
-%define realversion	1.3101
-%define release	%mkrel 7
-%define name 	perl-Convert-BER
-%define realname	Convert-BER
+%define upstream_name	 Convert-BER
+%define upstream_version 1.3101
 
-Summary:        Convert-BER (module for perl)
-Name: 		%{name}
-version: 	%{version}
-Release: 	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Convert-BER (module for perl)
 License: 	GPL
 Group: 		Development/Perl
-Source: 	%{realname}-%{realversion}.tar.bz2
+Url: 		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch:	noarch
-URL: 		http://www.cpan.org/modules/by-module/Convert/
-BuildRequires:	perl-devel
-BuildRoot: 	%{_tmppath}/%{name}-root/
-Requires: 	perl
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Convert::BER is a perl object class implementation to encode
@@ -23,7 +20,7 @@ and decode objects as described by ITU-T standard X.209 (ASN.1)
 using Basic Encoding Rules (BER)
 	
 %prep
-%setup -q -n %{realname}-%{realversion}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -44,5 +41,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc MANIFEST README ChangeLog
 %{perl_vendorlib}/Convert
 %{_mandir}/*/*
-
-
