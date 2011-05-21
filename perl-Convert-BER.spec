@@ -10,7 +10,7 @@ License: 	GPL
 Group: 		Development/Perl
 Url: 		http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.gz
-Epoch: 0
+Epoch: 1
 BuildArch:	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
