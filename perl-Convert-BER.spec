@@ -5,7 +5,7 @@ Summary:	Convert-BER (module for perl)
 Name:		perl-%{upstream_name}
 Epoch:		1
 Version:	%perl_convert_version %{upstream_version}
-Release:	15
+Release:	16
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
