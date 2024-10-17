@@ -8,7 +8,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	16
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
