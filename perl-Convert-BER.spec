@@ -1,15 +1,15 @@
 %define upstream_name	 Convert-BER
-%define upstream_version 1.3101
+%define upstream_version 1.32
 
 Summary:	Convert-BER (module for perl)
 Name:		perl-%{upstream_name}
 Epoch:		1
-Version:	%perl_convert_version %{upstream_version}
-Release:	16
+Version:	%{upstream_version}
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Convert-BER
+Source0:	https://cpan.metacpan.org/authors/id/G/GB/GBARR/Convert-BER-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
