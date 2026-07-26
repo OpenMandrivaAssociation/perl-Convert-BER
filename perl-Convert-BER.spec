@@ -1,15 +1,13 @@
 %define upstream_name	 Convert-BER
-%define upstream_version 1.32
-
 Summary:	Convert-BER (module for perl)
 Name:		perl-%{upstream_name}
 Epoch:		1
-Version:	%{upstream_version}
-Release:	1
+Version:	1.32
+Release:	2
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Convert-BER
-Source0:	https://cpan.metacpan.org/authors/id/G/GB/GBARR/Convert-BER-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/G/GB/GBARR/Convert-BER-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -20,7 +18,7 @@ and decode objects as described by ITU-T standard X.209 (ASN.1)
 using Basic Encoding Rules (BER)
 	
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%setup -qn %{upstream_name}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
